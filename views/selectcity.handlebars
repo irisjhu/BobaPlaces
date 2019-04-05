@@ -1,0 +1,9 @@
+<h1 id="title">Select a City to See the Boba Places There!</h1>
+
+<ul id="citylist">
+    {{#each data}}
+    <li><a href="/SelectCity/{{this}}">{{this}}</a></li>
+    {{else}}
+    <li>No boba places</li>
+    {{/each}}
+</ul>

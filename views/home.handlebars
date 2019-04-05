@@ -1,0 +1,50 @@
+<div id="searchbar"><input id="search" type="text" placeholder="Search..."></div>
+<h1 id="title">Boba Places uwu</h1>
+<div id="bobalist">
+    {{#each data}}
+    <div class="box">
+        <article class="item">
+            <h2 class="name">{{this.name}}</h2>
+            <hr align="left" width="30%">
+            <i>{{this.city}}, {{this.state}}</i>
+            <h3>Rating: {{this.rating}}</h3>
+            <h3>Milk Tea Flavors:</h3>
+            <ul class="flavors">
+                {{#each this.flavors}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </article>
+    </div>
+    <br>
+    {{else}}
+
+    <article>
+        <h1>There are no boba places yet. :(</h1>
+        <a href="/AddNewBoba">Add a boba place!</a>
+    </article>
+    {{/each}}
+    <h2 id="nomatch">No matches :(</h2>
+</div>
+
+<script>
+    $("#nomatch").fadeOut();
+    $("#searchbar").keyup(function () {
+        var filter = $(this).find("#search").val();
+        var count = 0;
+
+        $("#bobalist div").each(function () {
+            if ($(this).find(".name").text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+            } else {
+                count++
+                $(this).show();
+                $("#nomatch").fadeOut();
+            }
+        });
+
+        if (count == 0) {
+            $("#nomatch").show();
+        }
+    })
+</script>

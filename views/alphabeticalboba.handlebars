@@ -1,0 +1,24 @@
+<h1 id="title">Boba Places in Alphabetical Order</h1>
+{{#each data}}
+<div class="box">
+    <article class="item">
+        <h2 class="name">{{this.name}}</h2>
+        <hr align="left" width="30%">
+        <i>{{this.city}}, {{this.state}}</i>
+        <h3>Rating: {{this.rating}}</h3>
+        <h3>Milk Tea Flavors:</h3>
+        <ul class="flavors">
+            {{#each this.flavors}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </article>
+</div>
+<br>
+{{else}}
+
+<article>
+    <h1>There are no boba places yet. :(</h1>
+    <a href="/AddNewBoba">Add a boba place!</a>
+</article>
+{{/each}}

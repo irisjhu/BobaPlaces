@@ -1,0 +1,159 @@
+.nav {
+    width: 80%;
+    margin: auto;
+}
+
+.nav a {
+    padding: 10px;
+    background-color: lightcoral;
+    text-decoration: none;
+    color: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: darkmagenta;
+}
+
+.nav ul {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 7px;
+}
+
+.nav li a:hover {
+    background-color: rgb(158, 59, 55);
+}
+
+@media (max-width: 500px) {
+    .nav li {
+        float: none;
+    }
+
+    .content {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.flavors {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+input[type=text] {
+    width: 400px;
+    font-size: 17px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+textarea {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.content {
+    margin: auto;
+    width: 40%;
+}
+
+body {
+    background-color: rgb(255, 219, 166);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+#searchbar input {
+    display: block;
+    margin: 0 auto;
+}
+
+.box {
+    border-style: solid;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background-color: blanchedalmond;
+    border-color: rgb(255, 166, 34);
+}
+
+.item {
+    padding: 20px;
+}
+
+#title {
+    color: rgb(228, 83, 83);
+}
+
+.input-field {
+    padding: 10px 0;
+}
+
+#citylist {
+    list-style-type: none;
+}
+
+#citylist li {
+    padding: 20px;
+}
+
+#citylist li a {
+    padding: 10px;
+    border-style: solid;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(123, 235, 235);
+    border-color: darkcyan;
+}
+
+#citylist li a:hover {
+    background-color: rgb(102, 196, 196);
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: darkseagreen;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
