@@ -82,17 +82,14 @@ body {
     margin: 0 auto;
 }
 
-.box {
+.item {
+    padding: 20px;
     border-style: solid;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
     background-color: blanchedalmond;
     border-color: rgb(255, 166, 34);
-}
-
-.item {
-    padding: 20px;
 }
 
 #title {
